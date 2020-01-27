@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>forms</title>
+	<style>
+		input[type=text],[type=number],select,textarea
+		{
+			display:block;
+			margin:8px;
+		}
+		input[type=radio],[type=checkbox]{
+			display: inline;
+		}
+	</style>
+</head>
+<body>
+	<h2>Employee Details Form</h2>
+<form>
+	<label>First Name:</label>
+	<input type="text" name="firstname" required>
+	<label>Last Name:</label>
+	<input type="text" name="lastname" required>
+	<label>Gender:</label>
+	<input type="radio" name="gender" value="Male" >Male
+	<input type="radio" name="gender" value="Female">Female<br>
+	<label>Designation:</label>
+	<select>
+		<option value="HOD">HOD</option>
+		<option value="Teaching_Staff"> Teaching Staff</option>
+		<option value="Non_Teaching_Staff">Non teaching staff</option>
+	</select>
+	<label>Salary:</label>
+	<input type="number" name="salary">
+	<label>Address:</label>
+	<textarea rows="4" cols="50"></textarea>
+	<input type="checkbox" name="agree" value="on">The details are correct<br>
+	<input type="submit" name="submit" value="submit">
+</form>
+</body>
+</html>
